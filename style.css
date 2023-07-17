@@ -1,0 +1,59 @@
+h1{
+    background-color: cyan;
+    /* text-align: center; */
+    width: 80%;
+    margin: auto;
+}
+.sub-title{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+body{
+    min-height: 100vh;
+    background-size: cover;
+    margin: auto;
+}
+.background{
+  
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: rgb(228, 215, 180);
+   
+}
+.submit{
+    width: 15%;
+    background-color: dodgerblue;
+    color: white;
+}
+.reset{
+    width: 15%;
+}
+.Keunggulan{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}
+
+.a{
+    
+    margin: left;
+}
+.b{
+    
+    margin: auto;
+    text-align: justify;
+}
+.c{
+
+    margin: auto;
+    text-align: justify;
+}
+.hasill{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+}

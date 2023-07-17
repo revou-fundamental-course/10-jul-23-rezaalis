@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BMI Kalkulator</title>
+</head>
+<body>
+    <h1>Kalkulator BMI</h1>
+    <p class="sub-title">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaiman denganmu? Yuk, hitung sekarang di kalkulator BMI.</p>
+
+    <form action="/action_page.php">
+        <div class="background">
+    <label class="Kelamin">Jenis Kelamin<br>
+        <input type="radio" id="pria" name="jeniskelamin" value="pria" >
+        <label for="pria">Pria</label>
+        <input type="radio" id="wanita" name="jeniskelamin" value="wanita">
+        <label for="wanita">Wanita</label>
+    </label><br>
+    <label for="berat">Berat Badan(kg)</label><br/>
+    <div class="input" >
+      <span class="input-group-text" id="b"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+        <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+      </svg></span>
+      <input id="berat" type="number"><br/>
+    </div>
+    <label class="input" for="usia">Usia (tahun)</label><br/>
+    <div class="input" >
+        <span class="input-group-text" id="u"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+        </svg></span>
+        <input id="usia" type="number"><br/> 
+      </div>
+    <label class="input" for="tinggi">Tinggi Badan(cm)</label><br/>
+    <div class="input" >
+        <span class="input-group-text" id="t"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen" viewBox="0 0 16 16">
+          <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001zm-.644.766a.5.5 0 0 0-.707 0L1.95 11.756l-.764 3.057 3.057-.764L14.44 3.854a.5.5 0 0 0 0-.708l-1.585-1.585z"/>
+        </svg></span>
+        <input id="tinggi" type="number"><br/>
+      </div>
+      <p><button class="submit" onclick='hitungbmi()'>Hitung BMI</button>
+      <button class="reset" onclick="reload()">Reset</button></p>
+      </div>
+      <div class="Keunggulan">
+      <p class="a">Keunggulan fitur</p>
+         <p class="a">1. Menghitung berat badan</p>
+         <p class="a">2. Menentukan kategori berat badan ideal atau tidak</p>
+         <p class="a">3. Mempersiapkan program penurunan berat badan</p>
+         <p class="b">Kalkulator ini hanya boleh digunakan orang dewasa wanita hamil dan menyusui tidak boleh mengandalkan pembacaan BMI ini dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+         <p class="c">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M.</p>
+            </div>
+         <div class="hasill" id="kolomhasil">
+      <p id="heading"></p>
+      <p id="hasilbmi"></p>
+      <p id="diantara"></p>
+      <p id="pesan"></p>
+      <p id="konsultasi"></p>
+      <p id="keterangan"></p>
+    
+
+      <script src="script.js"></script>
+</form>
+</body>
