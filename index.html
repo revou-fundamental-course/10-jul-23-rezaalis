@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>BMI Kalkulator</title>
 </head>
 <body>
@@ -12,7 +13,7 @@
     <form action="/action_page.php">
         <div class="background">
     <label class="Kelamin">Jenis Kelamin<br>
-        <input type="radio" id="pria" name="jeniskelamin" value="pria" >
+        <input type="radio" id="pria" name="jeniskelamin" value="pria"  >
         <label for="pria">Pria</label>
         <input type="radio" id="wanita" name="jeniskelamin" value="wanita">
         <label for="wanita">Wanita</label>
@@ -47,16 +48,22 @@
          <p class="a">2. Menentukan kategori berat badan ideal atau tidak</p>
          <p class="a">3. Mempersiapkan program penurunan berat badan</p>
          <p class="b">Kalkulator ini hanya boleh digunakan orang dewasa wanita hamil dan menyusui tidak boleh mengandalkan pembacaan BMI ini dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
-         <p class="c">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M.</p>
-            </div>
+         <p class="c">Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
+         <p id="heading" style="font-size:40px"></p>    
+        </div>
+            
          <div class="hasill" id="kolomhasil">
-      <p id="heading"></p>
-      <p id="hasilbmi"></p>
-      <p id="diantara"></p>
-      <p id="pesan"></p>
-      <p id="konsultasi"></p>
-      <p id="keterangan"></p>
-    
+          <p id="pesan"></p>
+          <p id="hasilbmi" style="font-size:50px;margin-top: auto;margin-bottom: auto;"></p>
+          <p id="pesan1"></p>
+          <p class="dl" id="dl" inputmode="reset"></p>
+        </div>
+         <div class="ppk">
+          <p id="penjelasan"></p>
+          <p id="penegasan"></p>
+          <p id="keterangan"></p> 
+        </div>
+        
 
       <script src="script.js"></script>
 </form>
