@@ -1,11 +1,11 @@
 h1{
     background-color: cyan;
     /* text-align: center; */
-    width: 80%;
+    width: 50%;
     margin: auto;
 }
 .sub-title{
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: justify;
 }
@@ -17,11 +17,12 @@ body{
 .background{
   
     display: flex;
-    width: 80%;
+    width: 50%;
     margin: auto;
     flex-direction: column;
     /* align-items: center; */
     background-color: rgb(228, 215, 180);
+    background-clip: padding-box;
    
 }
 .submit{
@@ -33,11 +34,13 @@ body{
     width: 15%;
 }
 .Keunggulan{
-    width: 80%;
+    width: 50%;
     margin: auto;
     text-align: justify;
 }
-
+.input-group-text{
+    width: 5%;
+}
 .a{
     
     margin: left;
@@ -53,7 +56,22 @@ body{
     text-align: justify;
 }
 .hasill{
-    width: 80%;
+    width: 50%;
+    margin: auto;
+    margin-top: auto;
+    text-align: justify;
+    text-align: center;
+    background-color: rgb(228, 215, 180);
+}
+.dl{
+    width: 25%;
+    margin: auto;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+}
+.ppk{
+    width: 50%;
     margin: auto;
     text-align: justify;
 }
